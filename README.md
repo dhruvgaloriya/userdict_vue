@@ -1,4 +1,4 @@
-# first-app
+## Basic Vue App
 
 ## Project setup
 
