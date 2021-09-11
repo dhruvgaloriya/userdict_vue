@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h3 class="center">Welcome to my first Vue App</h3>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  methods: {
+    saveForm: function() {
+      console.log("ok");
+    },
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style lang="less">
+@import "../node_modules/@gofynd/nitrozen-vue/dist/nitrozen.css";
+
+body {
+  background-color: #f8f8f8;
+}
+.center {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+#app {
+  font-family: Inter, sans-serif;
+  color: #41434c;
 }
 </style>
