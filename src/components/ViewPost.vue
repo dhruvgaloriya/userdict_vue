@@ -1,7 +1,7 @@
 <template>
   <div class="padding">
     <ntz-button theme="secondary" v-flat-btn @click="backToHome">
-      Back to Home
+      Home
     </ntz-button>
     <section class="container">
       <div class="user-post" v-for="post in getUserPosts" :key="post.id">
